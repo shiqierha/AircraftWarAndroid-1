@@ -102,7 +102,7 @@ public abstract class AbstractGame extends MySurfaceView {
     @Override
     public void run() {
         //userDao.readFromFile();
-
+        System.out.println("shit!!!");
         // 定时任务：绘制、对象产生、碰撞判定、击毁及结束判定
       //  MusicThread musicPlay=new MusicThread("src/videos/bgm.wav",true);
         Runnable task = () -> {
@@ -360,6 +360,7 @@ public abstract class AbstractGame extends MySurfaceView {
     @Override
     public void draw(){
         canvas = mSurfaceHolder.lockCanvas();
+
         if(mSurfaceHolder == null || canvas == null){
             return;
         }
